@@ -16,5 +16,3 @@ Log in as Manager::
     <p>Text of Info3</p>
     </li>
     </ul>
-
-    >>> browser.openBrowser()
