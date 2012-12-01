@@ -2,6 +2,10 @@ from Products.CMFCore.utils import getToolByName
 from sll.basetheme.tests.base import IntegrationTestCase
 
 
+def get_css_resource(obj, name):
+    return getToolByName(obj, 'portal_css').getResource(name)
+
+
 class TestCase(IntegrationTestCase):
     """TestCase for Plone setup."""
 
@@ -17,10 +21,106 @@ class TestCase(IntegrationTestCase):
         from plone.browserlayer import utils
         self.assertIn(ISllBasethemeLayer, utils.registered_layers())
 
+    def test_cssregistry__jquerytools_dateinput__rendering(self):
+        resource = get_css_resource(self.portal, '++resource++plone.app.jquerytools.dateinput.css')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__jquery_autocomplete__rendering(self):
+        resource = get_css_resource(self.portal, '++resource++plone.formwidget.autocomplete/jquery.autocomplete.css')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__sll_basetheme_main__applyPrefix(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertTrue(resource.getApplyPrefix())
+
+    def test_cssregistry__sll_basetheme_main__authenticated(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__sll_basetheme_main__compression(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertEqual(resource.getCompression(), 'safe')
+
+    def test_cssregistry__sll_basetheme_main__conditionalcomment(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__sll_basetheme_main__cookable(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertTrue(resource.getCookable())
+
+    def test_cssregistry__sll_basetheme_main__enabled(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__sll_basetheme_main__expression(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertEqual(resource.getExpression(), 'request/HTTP_X_THEME_ENABLED | nothing')
+
+    def test_cssregistry__sll_basetheme_main__media(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__sll_basetheme_main__rel(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__sll_basetheme_main__rendering(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__sll_basetheme_main__title(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__sll_basetheme_extra__applyPrefix(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertTrue(resource.getApplyPrefix())
+
+    def test_cssregistry__sll_basetheme_extra__authenticated(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__sll_basetheme_extra__compression(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertEqual(resource.getCompression(), 'safe')
+
+    def test_cssregistry__sll_basetheme_extra__conditionalcomment(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__sll_basetheme_extra__cookable(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertTrue(resource.getCookable())
+
+    def test_cssregistry__sll_basetheme_extra__enabled(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__sll_basetheme_extra__expression(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertEqual(resource.getExpression(), 'request/HTTP_X_THEME_ENABLED | nothing')
+
+    def test_cssregistry__sll_basetheme_extra__media(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__sll_basetheme_extra__rel(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__sll_basetheme_extra__rendering(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__sll_basetheme_extra__title(self):
+        resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
+        self.assertIsNone(resource.getTitle())
+
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-sll.basepolicy:default'), u'0')
+            setup.getVersionForProfile('profile-sll.basetheme:default'), u'0')
 
     def test_uninstall__package(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')

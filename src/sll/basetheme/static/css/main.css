@@ -1,0 +1,215 @@
+body{
+    background: white;
+    color: #333333;
+    font-family: Myriad Pro, sans-serif;
+}
+a:link, a:visited,
+#content a:link, #content a:visited,
+dl.portlet a:link, dl.portlet a:visited {
+    border: none;
+    color: #00a2c0;
+}
+
+/*Header*/
+#potal-top {
+    background: white;
+}
+#portal-header,
+#portal-columns {
+    margin: 0 10%;
+    width: 80%;
+}
+#portal-siteactions {
+    margin: 0.25em 0;
+    padding: 0;
+    text-align: right;
+}
+#portal-siteactions li {
+    padding: 0.25em;
+}
+#portal-logo {
+    margin: 0 0 1.25em;
+    max-width: 70%;
+}
+#portal-logo img {
+    height: auto;
+    width: 100%;
+}
+#portal-searchbox {
+    max-width: 30%;
+}
+input.searchField {
+    -moz-appearance: textfield;
+}
+input.searchButton {
+    background: #ca2464;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.05em 0.2em;
+}
+.searchSection {
+  display: none;
+}
+#portal-globalnav,
+#portal-globalnav li a {
+    background: transparent;
+}
+#portal-globalnav
+ {
+    font-size: 90%;
+    margin: 0;
+}
+#portal-globalnav li a {
+    margin: 0 0 0.2em;
+}
+#portal-globalnav .selected a {
+    background: none repeat scroll 0 0 #ca2464;
+    color: white;
+}
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover {
+    background: #37a9c3;
+    color: white;
+}
+#portal-globalnav li a {
+    border-radius: 5px;
+    border-right: 0.1em solid white;
+    min-width: 0;
+    padding: 0.4em 1em;
+}
+
+/*Content*/
+#portal-body {
+    background: url("++resource++sll.basetheme/images/bg.jpg") no-repeat scroll center 0 transparent;
+    background-size: 100%;
+    padding: 0.7em 0 0;
+    clear: both;
+}
+#portal-columns{
+    background: white;
+    border-radius: 10px;
+    float: left;
+    padding: 1em 0 0 0;
+}
+#portal-breadcrumbs {
+    line-height: 2em;
+    margin-left: 0.25em;
+    padding: 0.25em 0;
+}
+#portal-breadcrumbs a {
+    color: #333333;
+}
+#viewlet-below-content {
+    clear: both;
+}
+
+/*Portlet: Navigation*/
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    background: #29A2BF;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+dl.portlet ul.navTreeLevel1 li.navTreeItem a.state-published {
+    color: #333333 !important;
+}
+
+/*dl.portlet ul.navTree li.navTreeItemInPath li.navTreeCurrentNode a.navTreeCurrentItem,*/
+dl.portlet ul.navTree li.navTreeItemInPath li.navTreeCurrentNode > a.state-published,
+dl.portlet ul.navTree li a.state-published {
+    color: white !important;
+}
+
+dl.portlet ul.navTree li.navTreeItemInPath a.state-published {
+    color: #333333 !important;
+}
+
+dl.portlet ul.navTree li.navTreeItemInPath li.navTreeCurrentNode a.navTreeCurrentItem:hover,
+dl.portlet ul.navTree li a.state-published:hover {
+    color: #75ad0a !important;
+}
+
+dl.portlet ul.navTree li.navTreeCurrentNode {
+    background: white;
+}
+dl.portlet ul.navTree li.navTreeItemInPath {
+    background: white;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background: #ca2464;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25em 1em;
+}
+
+/*Footer*/
+#portal-footer-wrapper{
+    background:#747474;
+    background: -moz-linear-gradient(#545454, #747474) no-repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#545454), to(#747474));
+    clear: both;
+}
+#portal-footer {
+    background: transparent;
+    color: white;
+    margin: 0 10%;
+}
+#portal-footer h1,
+#portal-footer h2,
+#portal-footer h3,
+#portal-footer h4,
+#portal-footer h5,
+#portal-footer h6 {
+    color: white;
+}
+#portal-footer a:link, #portal-footer a:visited {
+    color: white;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1200px) {
+    #portal-header,
+    #portal-columns {
+        margin: 0 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #portal-header,
+    #portal-columns {
+        margin: 0 0.5%;
+        width: 99%;
+    }
+    #portal-logo {
+        margin: 0.7em;
+        max-width: 100%;
+    }
+    #portal-searchbox {
+        clear: none;
+        float: none;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.position-1\:4 {
+        margin-left: 0;
+    }
+    div.width-3\:4 {
+        width: 100%;
+    }
+    div.width-1\:4 {
+        width: 100%;
+    }
+    div.position-0 {
+        margin-left: 0;
+    }
+    div.cell {
+        float: 0;
+        left: 0;
+        position: inherit;
+    }
+}
