@@ -14,6 +14,18 @@ The folder name will be listed as site actions.
 
 * You don't need to provide 'actions' tag any more.
 
+Footer Info
+-----------
+
+List of information can be added to footer by creating first folder named 'footer-info' and
+putting **page** within the folder.
+
+Subfolders
+----------
+
+Shows navigation items directly under site or micro site root and also one step deeper.
+
+
 Changelog
 ---------
 

@@ -1,5 +1,5 @@
-<section id="footer-subfolders" tal:condition="viewlet/navigationTree">
-  <article tal:repeat="item viewlet/navigationTree">
+<section id="footer-subfolders" tal:condition="viewlet/items">
+  <article tal:repeat="item viewlet/items">
     <h1>
       <a tal:attributes="href item/getURL" tal:content="item/Title" />
     </h1>

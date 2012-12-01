@@ -16,7 +16,11 @@ from plone.app.layout.viewlets.interfaces import IPortalHeader
 from plone.memoize import view
 from sll.basetheme.browser.interfaces import ISllBasethemeLayer
 from zope.component import getMultiAdapter
+from zope.i18nmessageid import MessageFactory
 from zope.interface import Interface
+
+
+_ = MessageFactory("plone")
 
 
 grok.templatedir('viewlets')
@@ -108,3 +112,13 @@ class FooterSubfoldersViewlet(BaseViewlet):
         }
         strategy = getMultiAdapter((context, self), INavtreeStrategy)
         return buildFolderTree(context, obj=context, query=query, strategy=strategy)['children']
+
+    @view.memoize
+    def items(self):
+        items = self.navigationTree()
+        items.append({
+            'Title': _(u'Site Map'),
+            'getURL': '{}/sitemap'.format(self.navigationTreeRootPath()),
+            'children': [],
+        })
+        return items
