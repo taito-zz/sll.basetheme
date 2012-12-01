@@ -41,6 +41,18 @@ def setUp(self):
     portal.error_log._ignored_exceptions = ()
     setRoles(portal, TEST_USER_ID, ['Manager'])
 
+    footer_info = portal[portal.invokeFactory('Folder', 'footer-info')]
+    footer_info.reindexObject()
+    info1 = footer_info[footer_info.invokeFactory(
+        'Document', 'info1', title="Info1", text='<p>Text of Info1</p>')]
+    info1.reindexObject()
+    info2 = footer_info[footer_info.invokeFactory(
+        'Document', 'info2', title="Info2", text='<p>Text of Info2</p>')]
+    info2.reindexObject()
+    info3 = footer_info[footer_info.invokeFactory(
+        'Document', 'info3', title="Info3", text='<p>Text of Info3</p>')]
+    info3.reindexObject()
+
     transaction.commit()
 
 

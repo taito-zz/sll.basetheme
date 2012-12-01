@@ -1,5 +1,5 @@
 from Products.CMFPlone.utils import getToolByName
-from sll.basepolicy.upgrades import install_packages
+from abita.utils.utils import install_packages
 
 
 import logging

@@ -67,12 +67,13 @@ class FooterInfoViewlet(BaseViewlet):
         query = {
             'object_provides': IATDocument.__identifier__,
             'path': {
-                'query': '{0}/footer-info'.format('/'.join(portal_state.navigation_root_path())),
+                'query': '{}/footer-info'.format(portal_state.navigation_root_path()),
                 'depth': 1,
             },
             'sort_on': 'getObjPositionInParent',
         }
         items = [{
+            'id': item.id,
             'title': item.Title(),
             'url': item.getURL(),
             'description': item.Description(),

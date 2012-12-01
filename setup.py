@@ -24,6 +24,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'Products.CMFPlone',
+        'abita.utils',
         'five.grok',
         'five.pt',
         'hexagonit.testing',

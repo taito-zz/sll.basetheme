@@ -27,3 +27,13 @@ class TestCase(IntegrationTestCase):
 
         self.assertIsNone(css.getResource('base.css'))
         self.assertIsNone(css.getResource('print.css'))
+
+    def test_install_sll_basetheme(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        installer.uninstallProducts(['sll.basetheme'])
+        self.assertFalse(installer.isProductInstalled('sll.basetheme'))
+
+        from sll.basetheme.upgrades import install_sll_basetheme
+        install_sll_basetheme(self.portal)
+
+        self.assertTrue(installer.isProductInstalled('sll.basetheme'))
