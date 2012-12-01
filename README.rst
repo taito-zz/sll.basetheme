@@ -29,7 +29,7 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
-0.0 (2012-12-01)
+0.1 (2012-12-01)
 ================
 
 - Initila release. [taito]
