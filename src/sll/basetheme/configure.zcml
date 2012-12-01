@@ -1,0 +1,24 @@
+<configure
+  i18n_domain="sll.basetheme"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:grok="http://namespaces.zope.org/grok"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <!-- Do not use <includeDependencies package="." /> directive! -->
+  <!-- This might break whole plone site! -->
+  <!-- Use <include package="..."/> for specific packages instead. -->
+  <include package="five.grok" />
+  <grok:grok package="." />
+  <i18n:registerTranslations directory="locales" />
+
+  <genericsetup:registerProfile
+    description="Installs sll.basetheme"
+    directory="profiles/default"
+    name="default"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    title="sll.basetheme"
+    />
+
+</configure>
