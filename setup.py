@@ -28,7 +28,8 @@ setup(
         'five.grok',
         'five.pt',
         'hexagonit.testing',
-        'setuptools'],
+        'setuptools',
+        'z3c.jbot'],
     entry_points="""
     # -*- Entry points: -*-
 
