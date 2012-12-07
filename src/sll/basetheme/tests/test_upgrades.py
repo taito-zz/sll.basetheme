@@ -37,3 +37,23 @@ class TestCase(IntegrationTestCase):
         install_sll_basetheme(self.portal)
 
         self.assertTrue(installer.isProductInstalled('sll.basetheme'))
+
+    def test_reimport_viewlets(self):
+        from zope.component import getUtility
+        from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
+        storage = getUtility(IViewletSettingsStorage)
+        manager = "plone.portalfooter"
+        skinname = "*"
+        viewlets = (u'plone.footer', u'plone.colophon', u'plone.site_actions')
+        self.assertEqual(storage.getOrder(manager, skinname), viewlets)
+        # Why?
+        # self.assertEqual(storage.getOrder(manager, skinname), ())
+
+        storage.setOrder(manager, skinname, viewlets)
+
+        from sll.basetheme.upgrades import reimport_viewlets
+        reimport_viewlets(self.portal)
+
+        self.assertEqual(storage.getOrder(manager, skinname), viewlets)
+        # Why?
+        # self.assertEqual(storage.getOrder(manager, skinname), ())

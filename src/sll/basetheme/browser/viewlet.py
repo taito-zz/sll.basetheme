@@ -67,11 +67,12 @@ class FooterInfoViewlet(BaseViewlet):
     def items(self):
         context = aq_inner(self.context)
         portal_state = getMultiAdapter((context, self.request), name="plone_portal_state")
+        portal_path = '/'.join(portal_state.portal().getPhysicalPath())
         catalog = getToolByName(context, 'portal_catalog')
         query = {
             'object_provides': IATDocument.__identifier__,
             'path': {
-                'query': '{}/footer-info'.format(portal_state.navigation_root_path()),
+                'query': '{}/footer-info'.format(portal_path),
                 'depth': 1,
             },
             'sort_on': 'getObjPositionInParent',

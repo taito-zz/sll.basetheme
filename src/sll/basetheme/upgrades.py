@@ -1,8 +1,11 @@
 from Products.CMFPlone.utils import getToolByName
 from abita.utils.utils import install_packages
-
+from abita.utils.utils import reimport_profile
 
 import logging
+
+
+PROFILE_ID = 'profile-sll.basetheme:default'
 
 
 logger = logging.getLogger(__name__)
@@ -21,3 +24,8 @@ def remove_css(context, oids):
     for oid in oids:
         logger.info('Removing css: {}.'.format(oid))
         css.manage_removeStylesheet(oid)
+
+
+def reimport_viewlets(context):
+    """Reimport viewlets"""
+    reimport_profile(context, PROFILE_ID, 'viewlets')

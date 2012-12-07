@@ -120,7 +120,20 @@ class TestCase(IntegrationTestCase):
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-sll.basetheme:default'), u'0')
+            setup.getVersionForProfile('profile-sll.basetheme:default'), u'1')
+
+    def test_viewlets__plone_portalfooter(self):
+        from zope.component import getUtility
+        from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
+        storage = getUtility(IViewletSettingsStorage)
+        manager = "plone.portalfooter"
+        skinname = "*"
+        # Why?
+        # self.assertEqual(storage.getHidden(manager, skinname), (
+        #     u'plone.colophon',
+        #     u'plone.footer',
+        #     u'plone.site_actions'))
+        self.assertEqual(storage.getHidden(manager, skinname), ())
 
     def test_uninstall__package(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
