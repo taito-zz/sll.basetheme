@@ -17,6 +17,7 @@
 }
 #footer-subfolders article {
     border-left: 1px solid #b7b7b7;
+    display: inline-block;
     padding: 0 0.5em;
     margin-bottom: 1.5em;
 }
