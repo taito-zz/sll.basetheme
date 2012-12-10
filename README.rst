@@ -29,6 +29,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.3.2 (2012-12-11)
+==================
+
+- Updated font size for footer. [taito]
+
 0.3.1 (2012-12-10)
 ==================
 
