@@ -25,6 +25,9 @@ dl.portlet a:link, dl.portlet a:visited {
     margin: 0 10%;
     width: 80%;
 }
+#portal-header {
+    padding: 0 1em;
+}
 #portal-siteactions {
     margin: 0.25em 0;
     padding: 0;
@@ -112,8 +115,12 @@ input.searchButton {
 #breadcrumbs-you-are-here {
     display: none;
 }
+#content {
+    margin: 1em 1em 2em;
+}
 #viewlet-below-content {
     clear: both;
+    margin: 0.5em 1em;
 }
 
 /*Batching*/
