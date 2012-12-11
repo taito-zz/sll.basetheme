@@ -29,6 +29,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.3.3 (2012-12-11)
+==================
+
+- Updated header and social button margin. [taito]
+
 0.3.2 (2012-12-11)
 ==================
 
