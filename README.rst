@@ -29,6 +29,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.3.4 (2012-12-12)
+==================
+
+- Updated font types. [taito]
+
 0.3.3 (2012-12-11)
 ==================
 
