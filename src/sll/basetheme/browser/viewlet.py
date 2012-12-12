@@ -123,3 +123,10 @@ class FooterSubfoldersViewlet(BaseViewlet):
             'children': [],
         })
         return items
+
+
+class FooterViewlet(BaseViewlet):
+    """Viewlet class to show footer info"""
+    grok.name('sll.basetheme.footer.message')
+    grok.template('footer-message')
+    grok.viewletmanager(IPortalFooter)

@@ -44,7 +44,12 @@ class TestCase(IntegrationTestCase):
         storage = getUtility(IViewletSettingsStorage)
         manager = "plone.portalfooter"
         skinname = "*"
-        viewlets = (u'plone.footer', u'plone.colophon', u'plone.site_actions')
+        viewlets = (
+            u'plone.footer',
+            u'plone.colophon',
+            u'plone.site_actions',
+            u'sll.basetheme.footer.info',
+            u'sll.basetheme.footer.subfolders')
         self.assertEqual(storage.getOrder(manager, skinname), viewlets)
         # Why?
         # self.assertEqual(storage.getOrder(manager, skinname), ())
