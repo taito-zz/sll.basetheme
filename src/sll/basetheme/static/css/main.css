@@ -132,42 +132,40 @@ div.listingBar {
 }
 
 /*Portlet: Navigation*/
-dl.portlet ul.navTreeLevel0 > .navTreeItem {
+dl.portlet ul.navTreeLevel0 > li.navTreeItem {
     background: #29A2BF;
     border-bottom: none;
     border-radius: 5px;
 }
-
-dl.portlet ul.navTreeLevel1 li.navTreeItem a.state-published {
-    color: #333333 !important;
-}
-
-dl.portlet ul.navTree li.navTreeItemInPath li.navTreeCurrentNode > a.state-published,
-dl.portlet ul.navTree li a.state-published {
+dl.portlet ul.navTreeLevel0 > li.navTreeItem > a.state-published {
     color: white !important;
 }
-
-dl.portlet ul.navTree li.navTreeItemInPath a.state-published {
+dl.portlet ul.navTreeLevel0 > li.navTreeItem > a.state-published:hover {
+    color: #75ad0a!important;
+}
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: transparent;
+    border-left: 1em solid transparent;
+}
+dl.portlet ul.navTree li.navTreeCurrentNode,
+dl.portlet ul.navTree li.navTreeItemInPath {
+    background-color: transparent;
     color: #333333 !important;
 }
-
-dl.portlet ul.navTree li.navTreeItemInPath li.navTreeCurrentNode a.navTreeCurrentItem:hover,
-dl.portlet ul.navTree li a.state-published:hover {
-    color: #75ad0a !important;
-}
-
-dl.portlet ul.navTree li.navTreeCurrentNode {
-    background: white;
-}
-dl.portlet ul.navTree li.navTreeItemInPath {
-    background: white;
-}
-
-dl.portlet ul.navTree .navTreeCurrentItem {
-    background: #ca2464;
-    border: none;
+dl.portlet ul.navTreeLevel0 > li.navTreeCurrentNode > a.state-published,
+dl.portlet ul.navTreeLevel0 > li.navTreeItemInPath > a.state-published {
+    background-color: #CA2464;
     border-radius: 5px;
-    padding: 0.25em 1em;
+    padding: 0.25em 0;
+}
+dl.portlet ul.navTreeLevel0 > li.navTreeItemInPath > a.state-published {
+    border-left: 1em solid transparent;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+dl.portlet ul.navTree li a.navTreeCurrentItem,
+dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
+    color: #CA2464 !important;
 }
 
 /*Footer*/
