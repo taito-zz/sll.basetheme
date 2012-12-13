@@ -1,7 +1,7 @@
 body{
     background: white;
     color: #333333;
-    font-family: Arial,FreeSans,sans-serif;
+    font-family: "Helvetica Neue",Arial,FreeSans,sans-serif;
 }
 body, h1, h2 {
     letter-spacing: 0.05em;
@@ -15,7 +15,6 @@ dl.portlet a:link, dl.portlet a:visited {
     border: none;
     color: #0084A7;
 }
-
 /*Header*/
 #potal-top {
     background: white;
