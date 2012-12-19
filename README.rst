@@ -29,10 +29,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
-0.4.1 (2012-12-xx)
-==================
+0.5 (2012-12-20)
+================
 
 - Updated styles for navigation. [taito]
+- Customized main_template.pt and removed dependency to plone.app.theming. [taito]
 
 0.4 (2012-12-12)
 ================
