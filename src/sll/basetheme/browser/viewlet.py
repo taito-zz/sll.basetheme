@@ -8,6 +8,7 @@ from decimal import Decimal
 from decimal import ROUND_DOWN
 from five import grok
 from plone.app.contentlisting.interfaces import IContentListing
+from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.layout.navigation.interfaces import INavtreeStrategy
 from plone.app.layout.navigation.navtree import buildFolderTree
 from plone.app.layout.navigation.root import getNavigationRoot
@@ -15,6 +16,7 @@ from plone.app.layout.viewlets.interfaces import IPortalFooter
 from plone.app.layout.viewlets.interfaces import IPortalHeader
 from plone.memoize import view
 from sll.basetheme.browser.interfaces import ISllBasethemeLayer
+from sll.basetheme.interfaces import IAboveColumnsViewletManager
 from zope.component import getMultiAdapter
 from zope.i18nmessageid import MessageFactory
 from zope.interface import Interface
@@ -130,3 +132,11 @@ class FooterViewlet(BaseViewlet):
     grok.name('sll.basetheme.footer.message')
     grok.template('footer-message')
     grok.viewletmanager(IPortalFooter)
+
+
+class AboveColumnsViewletManager(grok.ViewletManager):
+    """Viewlet Manager for Carousel"""
+    grok.context(INavigationRoot)
+    grok.implements(IAboveColumnsViewletManager)
+    grok.layer(ISllBasethemeLayer)
+    grok.name('sll.basetheme.above.columns')

@@ -29,6 +29,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.4.1 (2012-12-xx)
+==================
+
+- Updated styles for navigation. [taito]
+
 0.4 (2012-12-12)
 ================
 
