@@ -51,8 +51,6 @@ class TestCase(IntegrationTestCase):
             u'sll.basetheme.footer.info',
             u'sll.basetheme.footer.subfolders')
         self.assertEqual(storage.getOrder(manager, skinname), viewlets)
-        # Why?
-        # self.assertEqual(storage.getOrder(manager, skinname), ())
 
         storage.setOrder(manager, skinname, viewlets)
 
@@ -60,5 +58,3 @@ class TestCase(IntegrationTestCase):
         reimport_viewlets(self.portal)
 
         self.assertEqual(storage.getOrder(manager, skinname), viewlets)
-        # Why?
-        # self.assertEqual(storage.getOrder(manager, skinname), ())

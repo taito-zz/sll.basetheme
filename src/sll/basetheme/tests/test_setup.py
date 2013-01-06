@@ -128,12 +128,11 @@ class TestCase(IntegrationTestCase):
         storage = getUtility(IViewletSettingsStorage)
         manager = "plone.portalfooter"
         skinname = "*"
-        # Why?
-        # self.assertEqual(storage.getHidden(manager, skinname), (
-        #     u'plone.colophon',
-        #     u'plone.footer',
-        #     u'plone.site_actions'))
-        self.assertEqual(storage.getHidden(manager, skinname), ())
+        self.assertEqual(storage.getHidden(manager, skinname), (
+            u'plone.colophon',
+            u'plone.footer',
+            u'plone.site_actions',
+            u'sll.basetheme.footer.message'))
 
     def test_uninstall__package(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')

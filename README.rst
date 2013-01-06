@@ -25,9 +25,13 @@ Subfolders
 
 Shows navigation items directly under site or micro site root and also one step deeper.
 
-
 Changelog
 ---------
+
+0.5.1 (2013-01-06)
+==================
+
+- Tested with Plone-4.2.3 and Products.PloneFormGen-1.7.6. [taito]
 
 0.5 (2012-12-20)
 ================
