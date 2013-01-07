@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.5.2 (2013-01-07)
+==================
+
+- Updated style. [taito]
+
 0.5.1 (2013-01-06)
 ==================
 
