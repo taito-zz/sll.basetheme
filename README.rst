@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.5.3 (2013-01-07)
+==================
+
+- Got rid of border from left side image on portlets. [taito]
+
 0.5.2 (2013-01-07)
 ==================
 

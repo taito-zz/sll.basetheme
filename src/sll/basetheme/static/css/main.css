@@ -89,6 +89,9 @@ input.searchButton {
     min-width: 0;
     padding: 0.4em 1em;
 }
+.portletItem img.image-left {
+    border: none;
+}
 
 /*Content*/
 #portal-body {
