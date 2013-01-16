@@ -134,9 +134,14 @@ div.listingBar {
     background-color: linen;
 }
 
+/*Portlet link hover*/
+dl.portlet a:hover {
+    color: #ca2464 !important;
+}
+
 /*Portlet: Navigation*/
 dl.portlet ul.navTreeLevel0 > li.navTreeItem {
-    background: #29A2BF;
+    background: #20a3bc;
     border-bottom: none;
     border-radius: 5px;
 }
@@ -144,7 +149,7 @@ dl.portlet ul.navTreeLevel0 > li.navTreeItem > a.state-published {
     color: white !important;
 }
 dl.portlet ul.navTreeLevel0 > li.navTreeItem > a.state-published:hover {
-    color: #75ad0a!important;
+    color: #ca2464 !important;
 }
 dl.portlet ul.navTree .navTreeCurrentItem {
     background-color: transparent;
@@ -161,6 +166,11 @@ dl.portlet ul.navTreeLevel0 > li.navTreeItemInPath > a.state-published {
     border-radius: 5px;
     padding: 0.25em 0;
 }
+
+dl.portlet ul.navTreeLevel0 > li.navTreeItemInPath > a.state-published:hover {
+    color: white !important;
+}
+
 dl.portlet ul.navTreeLevel0 > li.navTreeItemInPath > a.state-published {
     border-left: 1em solid transparent;
     margin-left: -1em;
