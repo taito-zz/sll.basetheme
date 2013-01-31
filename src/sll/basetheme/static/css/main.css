@@ -204,6 +204,11 @@ dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
     color: white;
 }
 
+/* Site map */
+.template-sitemap .documentDescription {
+    display: none;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 1200px) {
     #portal-header,

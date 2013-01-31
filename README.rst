@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.5.5 (2013-01-31)
+==================
+
+- Hid documentDescription from site map. [taito]
+
 0.5.4 (2013-01-16)
 ==================
 
