@@ -32,6 +32,7 @@ Changelog
 ==================
 
 - Hid documentDescription from site map. [taito]
+- Changed footer listing from inline-block to list-item. [taito]
 
 0.5.4 (2013-01-16)
 ==================

@@ -47,7 +47,7 @@
     font-size: 1.1em;
 }
 #footer-subfolders li{
-    display: inline-block;;
+    display: list-item;
 }
 
 /*Media Queries*/
