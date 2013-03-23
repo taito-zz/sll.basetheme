@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.6 (2013-03-23)
+================
+
+- Show carousel also at micro site root. [taito]
+
 0.5.5 (2013-01-31)
 ==================
 

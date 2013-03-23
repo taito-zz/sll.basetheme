@@ -13,6 +13,8 @@ class SllBasethemeLayer(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
         """Set up Zope."""
         # Load ZCML
+        import z3c.jbot
+        self.loadZCML(package=z3c.jbot)
         import sll.basetheme
         self.loadZCML(package=sll.basetheme)
 

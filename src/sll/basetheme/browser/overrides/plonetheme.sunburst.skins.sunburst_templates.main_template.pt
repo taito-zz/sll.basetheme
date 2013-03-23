@@ -64,7 +64,7 @@
         </div>
 
     <div id="portal-body" class="row">
-    <div id="portal-carousel" tal:condition="context/@@plone_context_state/is_portal_root">
+    <div id="portal-carousel" tal:condition="python: context is context.restrictedTraverse('@@plone_portal_state').navigation_root()">
         <div tal:replace="structure provider:sll.basetheme.above.columns" />
     </div>
     <div id="portal-columns" class="row">
