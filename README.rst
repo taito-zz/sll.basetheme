@@ -28,6 +28,12 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7 (2013-04-30)
+================
+
+- Removed dependency from five.grok. [taito]
+- Tested with Plone-4.3. [taito]
+
 0.6 (2013-03-23)
 ================
 
