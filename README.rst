@@ -28,7 +28,7 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
-0.7.1 (2013-05-xx)
+0.7.1 (2013-05-03)
 ==================
 
 - Removed kss spinner. [taito]
