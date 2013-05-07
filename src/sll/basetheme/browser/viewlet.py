@@ -39,18 +39,6 @@ class SiteActionsViewlet(ViewletBase):
         portal_state = self.context.restrictedTraverse('@@plone_portal_state')
         path = '{}/site-actions'.format(portal_state.navigation_root_path())
         return IAdapter(self.context).get_content_listing(IATFolder, path=path, depth=1, sort_on='getObjPositionInParent')
-        # portal_state = getMultiAdapter((context, self.request), name="plone_portal_state")
-        # catalog = getToolByName(context, 'portal_catalog')
-        # query = {
-        #     'object_provides': IATFolder.__identifier__,
-        #     'path': {
-        #         'query': '{}/site-actions'.format(portal_state.navigation_root_path()),
-        #         'depth': 1,
-        #     },
-        #     'sort_on': 'getObjPositionInParent',
-        # }
-        # res = catalog(query)
-        # return IContentListing(res)
 
 
 class FooterInfoViewlet(ViewletBase):
@@ -66,27 +54,6 @@ class FooterInfoViewlet(ViewletBase):
 
         :rtype: list
         """
-        # portal_state = self.context.restrictedTraverse('@@plone_portal_state')
-        # context = aq_inner(self.context)
-        # portal_state = getMultiAdapter((context, self.request), name="plone_portal_state")
-        # portal_path = '/'.join(portal_state.portal().getPhysicalPath())
-        # catalog = getToolByName(context, 'portal_catalog')
-        # query = {
-        #     'object_provides': IATDocument.__identifier__,
-        #     'path': {
-        #         'query': '{}/footer-info'.format(portal_path),
-        #         'depth': 1,
-        #     },
-        #     'sort_on': 'getObjPositionInParent',
-        # }
-        # items = [{
-        #     'id': item.id,
-        #     'title': item.Title(),
-        #     'url': item.getURL(),
-        #     'description': item.Description(),
-        #     'text': item.getObject().CookedBody(),
-        # } for item in IContentListing(catalog(query))]
-        # return items
         res = []
         adapter = IAdapter(self.context)
         path = '{}/footer-info'.format(adapter.portal_path())
@@ -114,7 +81,6 @@ class FooterSubfoldersViewlet(ViewletBase):
     """Global viewlet
     Shows footer subfolders
     """
-    # grok.implements(INavigationTree)
     implements(IFooterSubfoldersViewlet)
     index = ViewPageTemplateFile('viewlets/footer-subfolders.pt')
 
@@ -161,11 +127,3 @@ class FooterMessageViewlet(ViewletBase):
      Shows footer message"""
     implements(IFooterMessageViewlet)
     index = ViewPageTemplateFile('viewlets/footer-message.pt')
-
-
-# class AboveColumnsViewletManager(grok.ViewletManager):
-#     """Viewlet Manager for Carousel"""
-#     grok.context(INavigationRoot)
-#     grok.implements(IAboveColumnsViewletManager)
-#     grok.layer(ISllBasethemeLayer)
-#     grok.name('sll.basetheme.above.columns')

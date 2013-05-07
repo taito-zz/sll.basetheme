@@ -2,6 +2,7 @@ from Products.CMFPlone.browser.interfaces import INavigationTree
 from collective.base.interfaces import IViewlet
 from zope.interface import Interface
 from zope.viewlet.interfaces import IViewletManager
+from plone.app.layout.globals.interfaces import IViewView
 
 
 # Browser layer
@@ -68,3 +69,9 @@ class IFooterSubfoldersViewlet(INavigationTree, IViewlet):
 
 class IFooterMessageViewlet(IViewlet):
     """Viewlet interface for FooterMessageViewlet"""
+
+
+# View
+
+class INavigationRootView(IViewView):
+    """View interface for navigation root"""

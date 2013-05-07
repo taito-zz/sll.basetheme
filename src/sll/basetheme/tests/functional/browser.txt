@@ -3,15 +3,15 @@ Log in as Manager::
     >>> browser.login(TEST_USER_NAME, TEST_USER_PASSWORD)
     >>> print browser.bycss('#footer-info')
     --- 1 ---
-    <ul id="footer-info"><li style="width: 33.33%" id="footer-info-info1">
+    <ul id="footer-info"><li id="footer-info-info1" style="width: 33.33%">
     <h1>Info1</h1>
     <p>Text of Info1</p>
     </li>
-    <li style="width: 33.33%" id="footer-info-info2">
+    <li id="footer-info-info2" style="width: 33.33%">
     <h1>Info2</h1>
     <p>Text of Info2</p>
     </li>
-    <li style="width: 33.33%" id="footer-info-info3">
+    <li id="footer-info-info3" style="width: 33.33%">
     <h1>Info3</h1>
     <p>Text of Info3</p>
     </li>

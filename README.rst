@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.2 (2013-05-07)
+==================
+
+- Added view interface for INavigationRoot. [taito]
+
 0.7.1 (2013-05-03)
 ==================
 
