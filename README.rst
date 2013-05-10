@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.3 (2013-05-10)
+==================
+
+- Fixed tests. [taito]
+
 0.7.2 (2013-05-07)
 ==================
 
