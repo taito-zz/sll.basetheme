@@ -116,7 +116,7 @@ class FooterSubfoldersViewlet(ViewletBase):
         items = self.navigationTree()
         items.append({
             'Title': _(u'Site Map'),
-            'getURL': '{}/sitemap'.format(self.navigationTreeRootPath()),
+            'getURL': '{}/@@sitemap'.format(self.navigationTreeRootPath()),
             'children': [],
         })
         return items

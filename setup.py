@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='sll.basetheme',
-    version='0.7.3',
+    version='0.7.4',
     description='Base theme for sll, slt and ll packages.',
     long_description=open("README.rst").read(),
     classifiers=[
@@ -23,8 +23,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'Products.CMFPlone',
-        'abita.utils',
         'collective.base',
         'setuptools',
         'z3c.jbot'],
