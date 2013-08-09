@@ -28,6 +28,32 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.4 (2013-08-09)
+==================
+
+- Fix sitemap link. [taito]
+
+0.7.3 (2013-05-10)
+==================
+
+- Fixed tests. [taito]
+
+0.7.2 (2013-05-07)
+==================
+
+- Added view interface for INavigationRoot. [taito]
+
+0.7.1 (2013-05-03)
+==================
+
+- Removed kss spinner. [taito]
+
+0.7 (2013-04-30)
+================
+
+- Removed dependency from five.grok. [taito]
+- Tested with Plone-4.3. [taito]
+
 0.6 (2013-03-23)
 ================
 

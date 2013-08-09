@@ -1,7 +1,7 @@
-<ul id="footer-info" tal:condition="viewlet/items">
+<ul id="footer-info" tal:condition="view/items">
   <li
-    tal:attributes="id string:footer-info-${item/id}; style viewlet/width"
-    tal:repeat="item viewlet/items">
+    tal:attributes="id string:footer-info-${item/id}; style view/width"
+    tal:repeat="item view/items">
     <h1 tal:content="item/title" />
     <div tal:replace="structure item/text" />
   </li>

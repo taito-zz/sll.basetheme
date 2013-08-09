@@ -4,12 +4,12 @@ from setuptools import setup
 
 setup(
     name='sll.basetheme',
-    version='0.6',
+    version='0.7.4',
     description='Base theme for sll, slt and ll packages.',
     long_description=open("README.rst").read(),
     classifiers=[
         "Framework :: Plone",
-        "Framework :: Plone :: 4.2",
+        "Framework :: Plone :: 4.3",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7"],
     keywords='',
@@ -23,13 +23,10 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'Products.CMFPlone',
-        'abita.utils',
-        'five.grok',
-        'five.pt',
-        'hexagonit.testing',
+        'collective.base',
         'setuptools',
         'z3c.jbot'],
+    extras_require={'test': ['hexagonit.testing']},
     entry_points="""
     # -*- Entry points: -*-
 

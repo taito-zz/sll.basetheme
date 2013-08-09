@@ -1,5 +1,5 @@
-<ul id="portal-siteactions" tal:condition="viewlet/actions">
-  <li tal:repeat="item viewlet/actions" tal:attributes="id string:siteaction-${item/id}">
+<ul id="portal-siteactions" tal:condition="view/actions">
+  <li tal:repeat="item view/actions" tal:attributes="id string:siteaction-${item/id}">
     <a
       tal:content="item/Title"
       tal:attributes="href item/getURL; title item/Title">Site action</a>
