@@ -19,13 +19,18 @@ dl.portlet a:link, dl.portlet a:visited {
 #potal-top {
     background: white;
 }
-#portal-header,
+/*#portal-header,
 #portal-columns {
     margin: 0 10%;
+    max-width: 970px;
     width: 80%;
-}
+}*/
+
 #portal-header {
+    margin: auto;
+    max-width: 970px;
     padding: 0 1em;
+    width: 80%;
 }
 #portal-siteactions {
     margin: 0.25em 0;
@@ -104,7 +109,9 @@ input.searchButton {
     background: white;
     border-radius: 10px 10px 0 0;
     float: left;
+    margin: 0 10%;
     padding: 1em 0 0 0;
+    width: 80%;
 }
 #portal-breadcrumbs {
     line-height: 2em;

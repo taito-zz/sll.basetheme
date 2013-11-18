@@ -2,6 +2,7 @@
 #footer-message,
 #footer-subfolders {
     margin: auto;
+    max-width: 970px;
     width: 75%;
 }
 #footer-info {
