@@ -1,0 +1,16 @@
+<configure
+  i18n_domain="sll.basetheme"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <genericsetup:upgradeStep
+    description=""
+    destination="2"
+    handler="sll.basetheme.upgrades.reimport_jsregistry"
+    profile="sll.basetheme:default"
+    sortkey="1"
+    source="1"
+    title="Reimport jsregistry"
+    />
+
+</configure>
