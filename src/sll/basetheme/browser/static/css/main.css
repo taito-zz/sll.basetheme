@@ -100,7 +100,8 @@ input.searchButton {
 
 /*Content*/
 #portal-body {
-    background: url("++resource++sll.basetheme/images/bg.jpg") no-repeat scroll center 0 transparent;
+    /*background: url("++resource++sll.basetheme/images/bg.jpg") no-repeat scroll center 0 transparent;*/
+    background: linear-gradient(to bottom, #b3e5ec, white);
     background-size: 100%;
     padding: 0.7em 0 0;
     clear: both;

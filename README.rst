@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.6 (2013-11-21)
+==================
+
+- Update style for column width: 970px. [taito]
+
 0.7.5 (2013-08-09)
 ==================
 

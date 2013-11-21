@@ -5,6 +5,7 @@
 
   <include package="collective.base"/>
   <include package=".browser" />
+  <include file="upgrades.zcml"/>
 
   <genericsetup:registerProfile
     description="Installs sll.basetheme"

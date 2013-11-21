@@ -120,7 +120,7 @@ class TestCase(IntegrationTestCase):
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-sll.basetheme:default'), u'1')
+            setup.getVersionForProfile('profile-sll.basetheme:default'), u'2')
 
     def test_viewlets__plone_portalfooter(self):
         from zope.component import getUtility
