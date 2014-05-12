@@ -11,7 +11,7 @@ jQuery(function() {
     }
 
     if (cwidth <= 970) {
-        $('#portal-columns').css('width', '970px');
+        $('#portal-columns').css('width', '100%');
         $('#portal-columns').css('margin', 'auto');
     }
 
@@ -19,21 +19,16 @@ jQuery(function() {
 
         var cwidth = $("#portal-columns").width();
         var wwidth = $(window).width();
-        if (wwidth > cwidth) {
+        if (wwidth >= cwidth && wwidth > 970) {
             var side_margin = (wwidth - 970) / 2;
             var margin = '0 ' + side_margin + 'px';
             $('#portal-columns').css('width', '970px');
             $('#portal-columns').css('margin', margin);
         } else {
             $('#portal-columns').css('width', '100%');
+            $('#portal-columns').css('margin', 'auto');
         }
 
-        if(wwidth >= 970) {
-            var side_margin = (wwidth - 970) / 2;
-            var margin = '0 ' + side_margin + 'px';
-            $('#portal-columns').css('width', '970px');
-            $('#portal-columns').css('margin', margin);
-        }
     });
 
 });
