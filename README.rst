@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.7 (2014-05-12)
+==================
+
+- Fix css for Safari. [taito]
+
 0.7.6 (2013-11-21)
 ==================
 
@@ -46,23 +51,23 @@ Changelog
 0.7.3 (2013-05-10)
 ==================
 
-- Fixed tests. [taito]
+- Fix tests. [taito]
 
 0.7.2 (2013-05-07)
 ==================
 
-- Added view interface for INavigationRoot. [taito]
+- Add view interface for INavigationRoot. [taito]
 
 0.7.1 (2013-05-03)
 ==================
 
-- Removed kss spinner. [taito]
+- Remove kss spinner. [taito]
 
 0.7 (2013-04-30)
 ================
 
-- Removed dependency from five.grok. [taito]
-- Tested with Plone-4.3. [taito]
+- Remove dependency from five.grok. [taito]
+- Test with Plone-4.3. [taito]
 
 0.6 (2013-03-23)
 ================
@@ -72,71 +77,71 @@ Changelog
 0.5.5 (2013-01-31)
 ==================
 
-- Hid documentDescription from site map. [taito]
-- Changed footer listing from inline-block to list-item. [taito]
+- Hide documentDescription from site map. [taito]
+- Change footer listing from inline-block to list-item. [taito]
 
 0.5.4 (2013-01-16)
 ==================
 
-- Updated navigation colors. [taito]
+- Update navigation colors. [taito]
 
 0.5.3 (2013-01-07)
 ==================
 
-- Got rid of border from left side image on portlets. [taito]
+- Get rid of border from left side image on portlets. [taito]
 
 0.5.2 (2013-01-07)
 ==================
 
-- Updated style. [taito]
+- Update style. [taito]
 
 0.5.1 (2013-01-06)
 ==================
 
-- Tested with Plone-4.2.3 and Products.PloneFormGen-1.7.6. [taito]
+- Test with Plone-4.2.3 and Products.PloneFormGen-1.7.6. [taito]
 
 0.5 (2012-12-20)
 ================
 
-- Updated styles for navigation. [taito]
-- Customized main_template.pt and removed dependency to plone.app.theming. [taito]
+- Update styles for navigation. [taito]
+- Customize main_template.pt and remove dependency to plone.app.theming. [taito]
 
 0.4 (2012-12-12)
 ================
 
-- Added viewlet to show footer message. [taito]
+- Add viewlet to show footer message. [taito]
 
 0.3.4 (2012-12-12)
 ==================
 
-- Updated font types. [taito]
+- Update font types. [taito]
 
 0.3.3 (2012-12-11)
 ==================
 
-- Updated header and social button margin. [taito]
+- Update header and social button margin. [taito]
 
 0.3.2 (2012-12-11)
 ==================
 
-- Updated font size for footer. [taito]
+- Update font size for footer. [taito]
 
 0.3.1 (2012-12-10)
 ==================
 
-- Fixed style for footer info. [taito]
+- Fixe style for footer info. [taito]
 
 0.3 (2012-12-09)
 ================
 
-- Updated styles. [taito]
+- Update styles. [taito]
 
 0.2 (2012-12-07)
 ================
 
-- Cleaned the package and covered tests. [taito]
+- Clean the package and cover tests. [taito]
 
 0.1 (2012-12-01)
 ================
 
-- Initila release. [taito]
+- Initil release. [taito]

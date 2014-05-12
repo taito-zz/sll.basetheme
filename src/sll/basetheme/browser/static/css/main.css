@@ -100,8 +100,12 @@ input.searchButton {
 
 /*Content*/
 #portal-body {
-    /*background: url("++resource++sll.basetheme/images/bg.jpg") no-repeat scroll center 0 transparent;*/
-    background: linear-gradient(to bottom, #b3e5ec, white);
+    background-color: #b3e5ec;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b3e5ec), to(#ffffff));
+    background: -webkit-linear-gradient(top, #b3e5ec, #ffffff);
+    background:    -moz-linear-gradient(top, #b3e5ec, #ffffff);
+    background:      -o-linear-gradient(top, #b3e5ec, #ffffff);
+    background:         linear-gradient(to bottom, #b3e5ec, #ffffff);
     background-size: 100%;
     padding: 0.7em 0 0;
     clear: both;
