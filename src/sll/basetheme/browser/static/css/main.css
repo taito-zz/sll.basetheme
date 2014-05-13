@@ -19,13 +19,6 @@ dl.portlet a:link, dl.portlet a:visited {
 #potal-top {
     background: white;
 }
-/*#portal-header,
-#portal-columns {
-    margin: 0 10%;
-    max-width: 970px;
-    width: 80%;
-}*/
-
 #portal-header {
     margin: auto;
     max-width: 970px;
@@ -92,7 +85,7 @@ input.searchButton {
     border-radius: 5px;
     border-right: 0.1em solid white;
     min-width: 0;
-    padding: 0.4em 1em;
+    padding: 0.4em 0.9em;
 }
 .portletItem img.image-left {
     border: none;
@@ -221,6 +214,10 @@ dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
     display: none;
 }
 
+img.image-inline {
+    width: 100%;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 1200px) {
     #portal-header,
@@ -231,7 +228,10 @@ dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
 }
 
 @media screen and (max-width: 1050px) {
-    #portal-header,
+    #portal-header {
+        margin: 0 2%;
+        width: 96%;
+    }
     #portal-columns {
         margin: 0 0.5%;
         width: 99%;
@@ -277,10 +277,32 @@ dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
     }
 
 }
+@media screen and (max-width: 750px) {
+    #portal-header {
+        margin: 0 4%;
+        width: 92%;
+    }
+}
 @media screen and (max-width: 500px) {
+    #portal-header {
+        margin: 0 5%;
+        width: 90%;
+    }
     #portal-column-two {
         column-count: 1;
         -moz-column-count: 1;
         -webkit-column-count: 1;
+    }
+}
+@media screen and (max-width: 450px) {
+    #portal-header {
+        margin: 0 6%;
+        width: 88%;
+    }
+}
+@media screen and (max-width: 400px) {
+    #portal-header {
+        margin: 0 7%;
+        width: 86%;
     }
 }
