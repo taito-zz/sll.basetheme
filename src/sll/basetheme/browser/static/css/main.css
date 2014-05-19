@@ -214,8 +214,15 @@ dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
     display: none;
 }
 
-img.image-inline {
-    width: 100%;
+div#content img,
+div#content .image-inline,
+div#content .image-right,
+div#content .image-left,
+div#content dd.image-caption
+ {
+    height: auto;
+    max-width: 100%;
+    width: auto;
 }
 
 /*Media Queries*/

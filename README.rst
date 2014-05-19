@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.11 (2014-05-19)
+===================
+
+- Fix image scaling. [taito]
+
 0.7.10 (2014-05-13)
 ===================
 
