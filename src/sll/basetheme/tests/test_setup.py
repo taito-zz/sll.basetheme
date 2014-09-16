@@ -55,7 +55,7 @@ class TestCase(IntegrationTestCase):
 
     def test_cssregistry__sll_basetheme_main__expression(self):
         resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
-        self.assertEqual(resource.getExpression(), 'request/HTTP_X_THEME_ENABLED | nothing')
+        self.assertEqual(resource.getExpression(), '')
 
     def test_cssregistry__sll_basetheme_main__media(self):
         resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/main.css')
@@ -99,7 +99,7 @@ class TestCase(IntegrationTestCase):
 
     def test_cssregistry__sll_basetheme_extra__expression(self):
         resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')
-        self.assertEqual(resource.getExpression(), 'request/HTTP_X_THEME_ENABLED | nothing')
+        self.assertEqual(resource.getExpression(), '')
 
     def test_cssregistry__sll_basetheme_extra__media(self):
         resource = get_css_resource(self.portal, '++resource++sll.basetheme/css/extra.css')

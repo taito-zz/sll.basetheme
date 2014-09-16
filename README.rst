@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.7.13 (2014-09-16)
+===================
+
+- Fix cssregistry.xml. [taito]
+
 0.7.12 (2014-05-19)
 ===================
 
