@@ -28,6 +28,11 @@ Shows navigation items directly under site or micro site root and also one step 
 Changelog
 ---------
 
+0.8 (2015-07-13)
+================
+
+Add dependency to Products.CMFPlacefulWorkflow for test. [taito]
+
 0.7.13 (2014-09-16)
 ===================
 
