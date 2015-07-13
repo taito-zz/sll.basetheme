@@ -4,6 +4,14 @@ sll.basetheme
 
 Base theme for sll, slt and ll packages.
 
+.. image:: https://secure.travis-ci.org/taito/sll.basetheme.png
+    :target: http://travis-ci.org/taito/sll.basetheme
+
+Currently tested with
+---------------------
+
+* Plone-4.3.6 with Python-2.7.10 [taito]
+
 Site Actions
 ------------
 
