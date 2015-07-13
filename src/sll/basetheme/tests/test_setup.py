@@ -122,6 +122,10 @@ class TestCase(IntegrationTestCase):
         self.assertEqual(
             setup.getVersionForProfile('profile-sll.basetheme:default'), u'2')
 
+    def test_theme_skins(self):
+        skins = getToolByName(self.portal, 'portal_skins')
+        self.assertEqual(skins.getSkinPaths()[1][0], 'Sunburst Theme')
+
     def test_viewlets__plone_portalfooter(self):
         from zope.component import getUtility
         from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
